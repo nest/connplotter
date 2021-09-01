@@ -23,7 +23,7 @@
 
 from distutils.core import setup
 
-setup(name='ConnPlotter',
+setup(name='nest-connplotter',
       version='0.7a0',
       description=('ConnPlotter is a tool to create ' +
                    'connectivity pattern tables'),
@@ -31,6 +31,7 @@ setup(name='ConnPlotter',
       author_email='hans.ekkehard.plesser@umb.no',
       url='https://www.nest-simulator.org',
       license='GNU Public License v2 or later',
+      requires=['numpy', 'matplotlib'],
       packages=['ConnPlotter', 'ConnPlotter.examples'],
       package_dir={'ConnPlotter': ''}
       )
