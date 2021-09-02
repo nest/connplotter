@@ -32,6 +32,6 @@ setup(name='nest-connplotter',
       url='https://www.nest-simulator.org',
       license='GNU Public License v2 or later',
       requires=['numpy', 'matplotlib'],
-      packages=['ConnPlotter', 'ConnPlotter.examples'],
+      packages=['ConnPlotter'],
       package_dir={'ConnPlotter': ''}
       )
