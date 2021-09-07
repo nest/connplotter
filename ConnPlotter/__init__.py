@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# ConnPlotter.py
+# __init__.py
 #
 # This file is part of NEST.
 #
@@ -152,6 +152,7 @@ pattern.toLaTeX('pattern.tex', standalone=True)
 from . import colormaps as cm
 
 import matplotlib as mpl
+import matplotlib.font_manager
 import numpy as np
 import warnings
 import nest
