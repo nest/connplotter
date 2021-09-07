@@ -21,7 +21,7 @@
 
 # ConnPlotter --- A Tool to Generate Connectivity Pattern Matrices
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(name='ConnPlotter',
       version='0.7a0',
@@ -31,6 +31,6 @@ setup(name='ConnPlotter',
       author_email='hans.ekkehard.plesser@umb.no',
       url='https://www.nest-simulator.org',
       license='GNU Public License v2 or later',
-      packages=['ConnPlotter', 'ConnPlotter.examples'],
-      package_dir={'ConnPlotter': ''}
+      packages=['ConnPlotter'],
+      install_requires=["matplotlib", "numpy", "nest-simulator"],
       )
