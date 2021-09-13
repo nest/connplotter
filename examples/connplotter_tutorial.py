@@ -74,7 +74,7 @@ import numpy as np
 import nest
 
 # ! Import ConnPlotter and its examples
-import ConnPlotter as cpl
+import connplotter as cpl
 from simple import simple
 from complex import complex
 from non_dale import non_dale
