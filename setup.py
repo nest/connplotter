@@ -25,8 +25,7 @@ from setuptools import setup
 
 setup(name='connplotter',
       version='0.7a0',
-      description=('ConnPlotter is a tool to create ' +
-                   'connectivity pattern tables'),
+      description=('connplotter is a tool to create connectivity pattern tables'),
       author='Hans Ekkehard Plesser (Idea: Eilen Nordlie)',
       author_email='hans.ekkehard.plesser@umb.no',
       url='https://www.nest-simulator.org',
