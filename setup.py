@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# __init__.py
+# setup.py
 #
 # This file is part of NEST.
 #
@@ -21,8 +21,15 @@
 
 # ConnPlotter --- A Tool to Generate Connectivity Pattern Matrices
 
-from .simple import *
-from .complex import *
-from .non_dale import *
+from setuptools import setup
 
-__all__ = ['simple', 'complex', 'non_dale']
+setup(name='connplotter',
+      version='0.7a0',
+      description=('connplotter is a tool to create connectivity pattern tables'),
+      author='Hans Ekkehard Plesser (Idea: Eilen Nordlie)',
+      author_email='hans.ekkehard.plesser@umb.no',
+      url='https://www.nest-simulator.org',
+      license='GNU Public License v2 or later',
+      packages=['connplotter'],
+      install_requires=["matplotlib", "numpy", "nest-simulator"],
+      )

@@ -74,8 +74,10 @@ import numpy as np
 import nest
 
 # ! Import ConnPlotter and its examples
-import ConnPlotter as cpl
-import ConnPlotter.examples as ex
+import connplotter as cpl
+from simple import simple
+from complex import complex
+from non_dale import non_dale
 
 # ! Turn of warnings about resized figure windows
 import warnings
@@ -126,7 +128,7 @@ def showTextTable(connPattern, fileTrunk):
 # !  Those two types are know to ConnPlotter.
 
 # ! Obtain layer, connection and model list from the example set
-s_layer, s_conn, s_model = ex.simple()
+s_layer, s_conn, s_model = simple()
 
 # ! Create Connection Pattern representation
 # p is evaluated, in case it is a Parameter
@@ -355,7 +357,7 @@ plt.show()
 # ! NMDA, GABA_A and GABA_B. These synapse types are known to ConnPlotter.
 
 # ! Setup and tabular display
-c_layer, c_conn, c_model = ex.complex()
+c_layer, c_conn, c_model = complex()
 # p is evaluated, in case it is a Parameter
 for i in range(len(c_conn)):
     c_conn[i][2]['p'] = eval(str(c_conn[i][2]['p']))
@@ -480,7 +482,7 @@ plt.show()
 # ! We look at a simple example here.
 
 # ! Load model
-nd_layer, nd_conn, nd_model = ex.non_dale()
+nd_layer, nd_conn, nd_model = non_dale()
 
 # ! We specify the synapse configuration using the synTypes argument:
 # !
